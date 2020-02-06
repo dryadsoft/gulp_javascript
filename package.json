@@ -1,0 +1,18 @@
+{
+  "name": "gulp_javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dryadsoft/gulp_javascript.git",
+  "author": "dryadsoft <dryadsoft@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
+  }
+}
