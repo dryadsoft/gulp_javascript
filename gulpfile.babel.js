@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import babel from "gulp-babel";
-
+import GulpUglify from "gulp-uglify";
 const routes = {
   js: {
     src: "src/**/*.js", // 대상 javascript파일
@@ -12,6 +12,7 @@ const js = () =>
   gulp
     .src(routes.js.src) // 출발지
     .pipe(babel()) // babel을 이용하여 컴파일
+    .pipe(GulpUglify())
     .pipe(gulp.dest(routes.js.dest)); // 목적지
 
 export const dev = gulp.series(js); // package.json의 scripts에 작성한 "gulp dev" task
